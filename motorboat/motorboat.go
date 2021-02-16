@@ -7,7 +7,7 @@ type Motorboat struct {
 	Speed int
 }
 
-func New(name string, speed int) base.ShipyardInterface {
+func New(name string, speed int) MotorboatInterface {
 	return &Motorboat{
 		Shipyard: base.Shipyard{
 			Name: name,
